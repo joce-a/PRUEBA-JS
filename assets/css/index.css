@@ -1,0 +1,59 @@
+body {
+	background-image: url(../images/back.jpg);
+	margin: 0;
+}
+
+.header-tw {
+	margin-bottom: 30px;
+}
+
+.header-tw__title {
+	background-color: cyan;
+	text-align: center;
+	padding: 50px;
+	margin: 0;
+}
+/*COLUMNA IZQUIERDA*/
+.create__box {
+	background-color: pink;
+	padding: 50px;
+	margin: 10px 0;
+	border: 2px solid magenta;
+}
+
+.create__message {
+	width: 300px;
+}
+
+.create__img {
+	width: 100px;
+	float: left;
+	padding-right: 20px;
+}
+
+/*COLUMNA DERECHA*/
+.tweets__box {
+	background-color: lightgrey;
+	margin: 10px 0;
+	padding: 20px;
+	border: 2px solid black;
+}
+.tweets__img {
+	margin-right: 20px;
+	width: 100px;
+	float: left;
+	border-radius: 50%;
+}
+.tweets__txt {
+	margin: 10px;
+}
+.tweets__like {
+	color: black;
+}
+.tweets__like--red {
+	color: red;
+}
+
+.delete__submit {
+	margin-left: 20px;
+}

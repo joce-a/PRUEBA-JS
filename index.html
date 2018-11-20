@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Tweet-A-lone</title>
+	
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+	<!-- Main CSS -->
+	<link rel="stylesheet" href="assets/css/index.css">
+	<!-- Font Awesome 5.5.0 -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+
+</head>
+<body>
+	<!-- INICIO -->
+	<header class="header-tw">
+		<h1 class="header-tw__title">Tweet-A-Lone</h1>
+	</header><!-- /.INICIO -->
+
+	<!-- COLUMNA IZQUIERDA -->
+	<section class="create col-md-6">
+	<div class="create__box">
+		<h4 class="create__title"> ¿Qué quieres decirle al mundo? </h4>
+		<form class="create__tweet">
+			<!-- caja del tweet -->
+			<label for="tweet" class="create__label">
+				<input type="text" name="..." class="create__message" id="txt" required>
+			</label>
+			<!-- imagen -->
+			<div class="create__display">
+				<div class="create__image"><img src="assets/images/user/new.jpg" class="create__img"></div>
+				<label for="image" class="create__label--img">
+					<select name="image" id="image" class="create__select">
+						<option value="new.jpg"> Mood </option>
+						<option value="01.jpg"> Imagen 01 </option>
+						<option value="02.jpg"> Imagen 02 </option>
+						<option value="03.jpg"> Imagen 03 </option>
+					</select>
+				</label>
+			</div>
+			<!-- submit -->
+			<input type="submit" class="create__submit" value="Tweet!">
+		</form>
+	</div>
+	</section> <!-- /.COLUMNA IZQUIERDA -->
+
+	<!-- COLUMNA DERECHA -->
+	<section class="tweets col-md-6">
+		<div class="tweets__box row">
+			<!-- imagen --> 
+			<div class="tweets__highlight">
+				<img class="tweets__img" src="assets/images/row-1.jpg" alt="imagen tweet">
+			</div>
+			<!-- texto-tweet -->
+			<div class="tweets__txt">
+				<p>Esto es una mísera prueba de lo que sería un tweet muy 90'</p>
+			</div>
+			<!-- ícono like -->
+			<a class="tweets__like" href="#">
+				<i class="far fa-heart"></i>
+				<!-- contador de likes-->
+				<span class="counter"> 0 </span>
+			</a>
+			<!-- btn erase -->
+			<input type="submit" class="delete__submit" value="Erase this!">
+		</div>
+
+		<div class="tweets__box row">
+			<!-- imagen --> 
+			<div class="tweets__highlight">
+				<img class="tweets__img" src="assets/images/row-2.jpg" alt="imagen tweet">
+			</div>
+			<!-- texto-tweet -->
+			<div class="tweets__txt">
+				<p>Sigo probando porque en algún momento tendré que hacer todo de cero para ver qué tan largo queda esto</p>
+			</div>
+			<!-- ícono like -->
+			<a class="tweets__like tweets__like--blue" href="#">
+				<i class="far fa-heart"></i>
+				<!-- contador de likes-->
+				<span class="counter"> 0 </span>
+			</a>
+			<!-- btn erase -->
+			<input type="submit" class="delete__submit" value="Erase this!">
+		</div>
+
+		<div class="tweets__box row">
+			<!-- imagen --> 
+			<div class="tweets__highlight">
+				<img class="tweets__img" src="assets/images/row-3.jpg" alt="imagen tweet">
+			</div>
+			<!-- texto-tweet -->
+			<div class="tweets__txt">
+				<p>Un Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio distinctio maiores no puede faltar</p>
+			</div>
+			<!-- ícono like -->
+			<a class="tweets__like tweets__like--blue" href="#">
+				<i class="far fa-heart"></i>
+				<!-- contador de likes-->
+				<span class="counter"> 0 </span>
+			</a>
+			<!-- btn erase -->
+			<input type="submit" class="delete__submit" value="Erase this!">
+		</div>
+	</section> <!-- /.COLUMNA DERECHA -->
+
+	<!-- jQuery 3.3.1 -->
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	<!-- Main JS -->
+	<script src="assets/js/index.js"></script>
+
+</body>
+</html>
