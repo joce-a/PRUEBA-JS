@@ -20,7 +20,7 @@ $(document).ready(function(){
 					'<div class="tweets__txt">' +
 					'<p>' + tweet + '</p>' +
 					'</div>' +
-					'<a class="tweets__like tweets__like--blue" href="#">' +
+					'<a class="tweets__like" href="#">' +
 					'<i class="far fa-heart"></i>' +
 					'<span class="counter"> 0 </span>' +
 					'</a>' +
@@ -28,35 +28,28 @@ $(document).ready(function(){
 					'</div>';
 
 		$('.tweets').append(html);
-			//me falta que vuelva con la foto anterior
-			//$('#image').val('src', 'assets/images/user/new.jpg');
 			$('#txt').val('');
 			$('#txt').focus();
-		})
+			$('#image').val('new.jpg');
+			$('.create__image .create__img').attr('src', 'assets/images/user/new.jpg');
 
+		})
 
 //COLUMNA IZQUIERDA
 
 		$('.tweets').on('click', '.tweets__like', function(e){
 			e.preventDefault();
 			e.stopPropagation();
-			
+
 			$(this).addClass('tweets__like--red')
 
-			});
-
-		//con este código logro algo muy raro
-		/*$('.tweets').on('click', '.counter', function(e){
-			e.preventDefault();
-			e.stopPropagation();
-			
-			var counter = $('.counter').text();
+			var counter = $(this).children('.counter').text();
 			counter = parseInt(counter);
-		
-			$(this).text(counter + 1);
-		})*/
+			counter = counter + 1
+			
+			$(this).children('.counter').text(' ' + counter + ' ');
 
-
+		})
 
 		$('.tweets').on('click', '.delete__submit', function(e){
 			e.preventDefault();
