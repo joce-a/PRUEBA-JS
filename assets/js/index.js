@@ -1,6 +1,4 @@
 $(document).ready(function(){
-	alert('hola') //para comprobar JS. No sacar hasta que esté listo.
-
 //COLUMNA IZQUIERDA
 	
 	$('#image').on('change', function(e){
