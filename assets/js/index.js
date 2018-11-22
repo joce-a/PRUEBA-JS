@@ -19,7 +19,7 @@ $(document).ready(function(){
 					'<p>' + tweet + '</p>' +
 					'</div>' +
 					'<a class="tweets__like" href="#">' +
-					'<i class="far fa-heart"></i>' +
+					'<i class="fas fa-heart"></i>' +
 					'<span class="counter"> 0 </span>' +
 					'</a>' +
 					'<input type="submit" class="delete__submit" value="Erase this!">' +

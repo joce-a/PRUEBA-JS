@@ -53,9 +53,17 @@ body {
 .tweets__like {
 	color: black;
 }
+.tweets__like:hover {
+	color: magenta;
+	text-decoration: none;
+}
 .tweets__like--red {
-	color: red;
+	color: magenta;
 }
 .delete__submit {
 	margin-left: 20px;
+}
+.delete__submit:hover {
+	color: magenta;
+	background-color: black;
 }
