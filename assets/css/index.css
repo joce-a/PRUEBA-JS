@@ -2,11 +2,9 @@ body {
 	background-image: url(../images/back.jpg);
 	margin: 0;
 }
-
 .header-tw {
 	margin-bottom: 30px;
 }
-
 .header-tw__title {
 	background-color: cyan;
 	text-align: center;
@@ -33,9 +31,6 @@ body {
 	width: 100px;
 	float: left;
 	padding-right: 20px;
-}
-.create__video {
-	border: 2px solid magenta;
 }
 
 /*COLUMNA DERECHA*/

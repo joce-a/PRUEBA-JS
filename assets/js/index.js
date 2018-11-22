@@ -4,7 +4,7 @@ $(document).ready(function(){
 	$('#image').on('change', function(e){
 		e.stopPropagation();
 		$('.create__image .create__img').attr('src', 'assets/images/user/' + $(this).val());
-	});
+		});
 
 	$('.create__tweet').on('submit', function(e){
 		e.preventDefault();
@@ -30,8 +30,7 @@ $(document).ready(function(){
 			$('#txt').focus();
 			$('#image').val('new.jpg');
 			$('.create__image .create__img').attr('src', 'assets/images/user/new.jpg');
-
-		})
+		});
 
 //COLUMNA IZQUIERDA
 
@@ -46,13 +45,12 @@ $(document).ready(function(){
 			counter = counter + 1
 			
 			$(this).children('.counter').text(' ' + counter + ' ');
-
-		})
+			});
 
 		$('.tweets').on('click', '.delete__submit', function(e){
 			e.preventDefault();
 			e.stopPropagation();
 			$(this).parent().remove();
-		})
+			});
 		
 }); //.document.ready
